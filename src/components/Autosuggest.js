@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import Rendersuggestion from './Rendersuggestion';
 import { users } from './UsersRecord'
-import Deleteproject from './Deleteproject';
+import DeleteandEdit from './DeleteandEdit';
 
 let Records = JSON.parse(localStorage.getItem('users_record')) || users
 
 function Autosuggest() {
-
     var [suggestions, setsuggestions] = useState([])
     const [user, setuser] = useState('');
     const [search, setsearch] = useState('Search By');
-
+    const [show, setshow] = useState(false)
+    const reveal = {
+        display: show? "block" : "none",
+    }
     const names = Records.map(name => (
         name["Name"]
     ))
@@ -47,12 +49,18 @@ function Autosuggest() {
 
     const choice = (e) => {
         setuser(e);
-        <Deleteproject person = {e}/>
     }
-
+    const get_project = () => {
+        setshow(true)
+    }
+    const reset_user = () => {
+        setuser("");
+        setsuggestions([])
+    }
     return (
         <div>
             <input type="text" onChange={select} value={user} className="input" placeholder="Search...." />
+            <button onClick= {get_project} className="enter-btn">GO</button>
             <select onChange={searchOption} value={search}>
                 <option>Search By</option>
                 <option>User</option>
@@ -61,6 +69,7 @@ function Autosuggest() {
             <p id="errormsg"></p>
             <Rendersuggestion suggestions = {suggestions} choice = {choice}/>
             <span>Suggestions : {suggestions.length}</span>
+            <DeleteandEdit user = {user} reveal = {reveal} reset_user = {reset_user}/>
         </div>
     )
 }

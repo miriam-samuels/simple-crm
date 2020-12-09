@@ -53,5 +53,4 @@ function Adduser() {
         </div>
     )
 }
-
 export default Adduser

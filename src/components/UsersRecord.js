@@ -6,18 +6,23 @@ export let users = [
     },
     {
        
-        Name : " Santiago Morales",
+        Name : " Simona Halep",
         Project : "Calculator",
     },
     {
        
-        Name : " Jeniffer Garcia",
+        Name : " Andy Murray",
         Project : "Todo App",
     },
     {
        
-        Name : " Savy Mongomery",
+        Name : " Mongomery",
         Project : "Tennis Bot",
+    },
+    {
+       
+        Name : "Aryna Sabalenka",
+        Project : "Carry On",
     },
     {
        
@@ -56,7 +61,7 @@ export let users = [
     },
     {
        
-        Name : " Alexander Tsitsipas",
+        Name : " Stephanos Tsitsipas",
         Project : "Skills",
     },
     {
@@ -88,5 +93,49 @@ export let users = [
        
         Name : " Dominic Thiem",
         Project : "Star",
+    },
+    {
+        Name : "Belinda Bencic",
+        Project : "Portfolio",
+    },
+    {
+        Name : "Daniil Medvedev",
+        Project : "Fun",
+    },
+    {
+        Name : "Alexandar Zverev",
+        Project : "Some Nights",
+    },
+    {
+        Name : "Victoria Azarenka",
+        Project : "Come Back",
+    },
+    {
+        Name : " Sofia Kenin",
+        Project : "American",
+    },
+    {
+        Name : " Elina Svitolina",
+        Project : "Ukranian",
+    },
+    {
+        Name : " Ashleigh Barty",
+        Project : "Australian",
+    },
+    { 
+        Name : " Karolina Pliskova",
+        Project : "Rise",
+    },
+    { 
+        Name : " Jo Wilfred Tsonga",
+        Project : "Afro",
+    },
+    { 
+        Name : " Stan Wawrinka",
+        Project : "Oasis",
+    },
+    { 
+        Name : " Maria Sharapova",
+        Project : "Beauty",
     },
 ]

@@ -1,12 +1,12 @@
+body{
+  width: 95%;
+  margin: auto;
+}
 input,button,select{
   display:  inline-block;
-  margin: 10px;
+  margin: 10px 0 10px 20px;
   padding: 10px;
   cursor: pointer;
-}
-#showUsers{
-  width: 90%;
-  margin: auto;
 }
 .users{
   display: inline-block;
@@ -22,5 +22,43 @@ li{
 }
 li:hover{
   background-color: black;
+  color: white;
+}
+.input{
+  border-right: none;
+}
+.enter-btn{
+  margin: 0;
+  border-left: none;
+  color: white;
+  background-color: green;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+.modal-content{
+  width: 250px;
+  padding:20px;
+  background-color: white;
+  box-shadow: 2px 2px 6px 2px gainsboro;
+}
+.modal-content button{
+  border: none;
+}
+.modal-content button.cancel-modal{
+  float: right;
+  background: transparent;
+  color: red;
+  font-weight: 900;
+}
+.modal-content button.delete-project{
+  background-color: red;
+  color: white;
+}
+.modal-content button.edit-project{
+  background-color: green;
   color: white;
 }
