@@ -6,6 +6,9 @@ function Crm() {
         <div >
             <Autosuggest />
             <Adduser />
+            <footer>
+                <b>Built by Medo Miriam</b>
+            </footer>
         </div>
     )
 }
